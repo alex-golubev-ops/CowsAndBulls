@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Regulations">
+    <columnConstraints>
+        <ColumnConstraints />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="470.0" prefWidth="400.0" GridPane.columnIndex="1">
+            <children>
+                <TextArea fx:id="out" editable="false" layoutX="16.0" layoutY="12.0" prefHeight="447.0" prefWidth="368.0" text="Правила игры Быки и Коровы:&#10;&#10;Правила игры очень просты! Компьютер загадывает некое 4 значное число. Цифры в Числе не повторяются. Цифра 0 может стоять в начале!&#10;&#10;Пример:&#10;1234, 4521,0987, 0718 и тд.&#10;&#10;Число у которого цифры повторяются компьютер не загадает!&#10;&#10;0022 , 3213 8498 и тд. - Невозможно!&#10;&#10;Компьютер загадал число,а как его теперь отгадать? &#10;&#10;Очень просто! Давайте представим что компьютер загадал число 9021.&#10;&#10;Теперь Вы должны ввести какое нибудь число в программу.К примеру 0451 и компьютер выведет вам сообщение:&#10;&#10;1Б , 1К.&#10;&#10;Что это значит?&#10;&#10;1К - означает что в числе которое вы ввели есть цифра которая присутствует в загаданном компьютером числе , но стоит не на той позиции.В данном случае это цифра 0.Она  есть в числе 9021 , но стоит на второй позиции,а не на первой как в введенном числе 0451.&#10;&#10;1Б - означает что в числе которое вы ввели есть цифра которая присутствует в загаданном  компьютером числе , и стоит на той же позиции.В данном случае это цифра 1.Она есть в числе 9021 и стоит на той же позиции что и 1 из числа 0451.&#10;&#10;Используя эти подсказки нужно и угадать какое число загадал компьютер. Удачи :)" wrapText="true" />
+            <TextFlow layoutX="14.0" layoutY="12.0" prefHeight="447.0" prefWidth="354.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

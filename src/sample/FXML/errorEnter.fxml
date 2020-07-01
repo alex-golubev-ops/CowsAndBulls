@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="261.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.fxmlEnter">
+   <children>
+      <Text layoutX="67.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ошибка в вводе!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="70.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/error.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
