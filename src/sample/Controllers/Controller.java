@@ -120,7 +120,7 @@ catch ( ErrorEnter e){
         });
         regulations.setOnAction(actionEvent -> {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("regulations.fxml"));
+            loader.setLocation(getClass().getResource("/sample/FXML/regulations.fxml"));
             try {
                 loader.load();
             }catch (IOException i){
