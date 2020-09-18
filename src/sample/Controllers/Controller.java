@@ -20,11 +20,7 @@ import sample.Exceptions.Win;
 
 public class Controller {
 
-    @FXML
-    private ResourceBundle resources;
 
-    @FXML
-    private URL location;
 
     @FXML
     private Button regulations;
@@ -91,7 +87,7 @@ public class Controller {
 
         }
         run.setOnAction(actionEvent -> {
-try {
+            try {
 
 
     String s = in.getText();
