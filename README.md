@@ -5,7 +5,7 @@
 рирует четырехзначное число без повторения цифр, на первой позиции
 разрешается быть 0. Например(0123, 2345). Цель пользователя отгадать 
 это число, генерирующиеся рандомно, за меньшее количество попыток.
-##### При запуске вас встретит такое окно:
+##### При запуске вас встретит окно:
 ![Image alt](https://github.com/alex-golubev-ops/PhotoForProject/raw/master/CowsAndBulls/start.png)
 ##### При некорректном вводе вам сообщат об ошибке:
 ![Image alt](https://github.com/alex-golubev-ops/PhotoForProject/raw/master/CowsAndBulls/error.png)
