@@ -1,12 +1,9 @@
 package sample.Controllers;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.Arrays;
 import java.util.Random;
-import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicInteger;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,8 +16,6 @@ import sample.Exceptions.ErrorEnter;
 import sample.Exceptions.Win;
 
 public class Controller {
-
-
 
     @FXML
     private Button regulations;
@@ -35,9 +30,11 @@ public class Controller {
     private Button run;
 
     public void parseArray(String mas[], int newmas[]) throws ErrorEnter {
+
         for(int i=0; i<4;i++){
             newmas[i] = Integer.parseInt(mas[i]);
         }
+
         for(int i=0;i<3;i++){
             for(int j=i+1; j<4;j++){
                 if(newmas[i]==newmas[j]){
@@ -47,12 +44,17 @@ public class Controller {
         }
 
     }
+
     public  String counterBullsCows(int mas[], int numbers[]) {
+
         if(Arrays.equals(mas,numbers)){
             return "Победа";
         }
+
         int counterCows = 0;
+
         int counterBulls = 0;
+
         for(int i = 0 ; i<4;i++){
             for(int j = 0; j<4;j++){
                 if(mas[i]==numbers[j]){
@@ -66,13 +68,15 @@ public class Controller {
         return "Б"+counterBulls+", К"+counterCows+"\n";
 
     }
+
     static AtomicInteger counterAttempt = new AtomicInteger();
+
     @FXML
     void initialize() {
-
         int number[] = new int[4];
         Arrays.fill(number,-1);
         Random rand = new Random();
+
         for (int i =0; i<4;i++) {
             boolean check;
             do {
@@ -102,7 +106,7 @@ public class Controller {
             throw new Win();
         }
         out.setText(out.getText() + result);
-     out.setScrollTop(Double.MAX_VALUE);
+        out.setScrollTop(Double.MAX_VALUE);
 
     } else {
         throw new ErrorEnter();
@@ -128,9 +132,5 @@ catch ( ErrorEnter e){
             stage.setTitle("Правила");
             stage.show();
         });
-
-
-
-
     }
 }
